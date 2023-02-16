@@ -9,15 +9,15 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const incomeFieldValue = parseInt(incomeFieldString);
 
   // validate income input
-  if (
-    isNaN(incomeFieldValue) ||
-    incomeFieldValue <= 0 ||
-    incomeFieldString.trim() === ""
-  ) {
-    alert("Please enter a valid positive number for income");
-    incomeField.value = "";
-    return;
-  }
+//   if (
+//     isNaN(incomeFieldValue) ||
+//     incomeFieldValue <= 0 ||
+//     incomeFieldString.trim() === ""
+//   ) {
+//     alert("Please enter a valid positive number for income");
+//     incomeField.value = "";
+//     return;
+//   }
 
 
 
@@ -28,15 +28,15 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const foodFieldValue = parseInt(foodFieldString);
 
   // validate food input
-  if (
-    isNaN(foodFieldValue) ||
-    foodFieldValue < 0 ||
-    foodFieldString.trim() === ""
-  ) {
-    alert("Please enter a valid positive number or zero for food expenses");
-    foodField.value = "";
-    return;
-  }
+//   if (
+//     isNaN(foodFieldValue) ||
+//     foodFieldValue < 0 ||
+//     foodFieldString.trim() === ""
+//   ) {
+//     alert("Please enter a valid positive number or zero for food expenses");
+//     foodField.value = "";
+//     return;
+//   }
 
 
 
@@ -46,15 +46,15 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const rentFieldValue = parseInt(rentFieldString);
 
   // validate rent input
-  if (
-    isNaN(rentFieldValue) ||
-    rentFieldValue < 0 ||
-    rentFieldString.trim() === ""
-  ) {
-    alert("Please enter a valid positive number or zero for rent expenses");
-    rentField.value = "";
-    return;
-  }
+//   if (
+//     isNaN(rentFieldValue) ||
+//     rentFieldValue < 0 ||
+//     rentFieldString.trim() === ""
+//   ) {
+//     alert("Please enter a valid positive number or zero for rent expenses");
+//     rentField.value = "";
+//     return;
+//   }
 
 
 
@@ -64,15 +64,15 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const clothesFieldValue = parseInt(clothesFieldString);
 
   // validate clothes input
-  if (
-    isNaN(clothesFieldValue) ||
-    clothesFieldValue < 0 ||
-    clothesFieldString.trim() === ""
-  ) {
-    alert("Please enter a valid positive number or zero for clothing expenses");
-    clothesField.value = "";
-    return;
-  }
+//   if (
+//     isNaN(clothesFieldValue) ||
+//     clothesFieldValue < 0 ||
+//     clothesFieldString.trim() === ""
+//   ) {
+//     alert("Please enter a valid positive number or zero for clothing expenses");
+//     clothesField.value = "";
+//     return;
+//   }
 
 
 
@@ -90,5 +90,22 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 
 
 
-  
+  // main balance calculation
+
+  const getMainBalance = incomeFieldValue - totalExpensesValue;
+
+
+  // Main balance
+
+  const mainBalance = document.getElementById('main-balance');
+  const mainBalanceString = mainBalance.innerText;
+  const mainBalanceValue = parseInt(mainBalanceString);
+
+  //get main balance 
+
+
+  const totalMianBalance = mainBalanceValue + getMainBalance;
+
+  mainBalance.innerText = totalMianBalance;
+
 });
