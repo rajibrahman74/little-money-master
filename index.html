@@ -9,20 +9,89 @@
     <!-- 
         Tailwind cdn link is associated with html
      -->
-     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
+    <section>
+        <h1 class="text-blue-500 text-3xl text-center font-bold">Little Money Master💰</h1>
+        <div class="flex justify-between items-center mt-10 w-2/3 mx-auto">
+            <div class="w-1/2">
+                <img class="rounded-md" src="image/money.jpeg" alt="">
+            </div>
+
+            <!-- 
+                Income
+             -->
+            <div class="bg-gray-200 w-1/2 p-6 rounded-md">
+                <h3 class="text-2xl font-bold text-center text-blue-500">Income</h3>
+                <span class="flex justify-evenly mt-5">
+                    <label class="font-bold text-lg" for="#">Income:</label>
+                    <input class="py-1 px-2 rounded-md" type="text">
+                </span>
 
 
-    
+                <!-- 
+                    Expenses and balance
+                 -->
+                <h3 class="text-2xl font-bold text-center text-blue-500 mt-5">Expenses</h3>
+                <span class="flex justify-evenly mt-5">
+                    <label class="font-bold text-lg" for="#">Food:</label>
+                    <input class="py-1 px-2 rounded-md" type="text">
+                </span>
+
+                <span class="flex justify-evenly mt-5">
+                    <label class="font-bold text-lg" for="#">Rent:</label>
+                    <input class="py-1 px-2 rounded-md" type="text">
+                </span>
+
+                <span class="flex justify-evenly mt-5">
+                    <label class="font-bold text-lg" for="#">Clothes:</label>
+                    <input class="py-1 px-2 rounded-md" type="text">
+                </span>
+
+                <span class="flex justify-center">
+                    <button class="bg-blue-700 text-white px-3 py-1 5 mt-5 rounded-md font-bold text-lg">
+                        Calculate
+                    </button>
+                </span>
+                <h3 class="text-2xl font-semibold text-center mt-5">Total Expenses: 00</h3>
+
+                <h3 class="text-2xl font-semibold text-center mt-5">Balance: 00</h3>
+
+
+                <!-- 
+                    Savings
+                 -->
+                <div class="flex justify-between items-center mt-5">
+                    <span class="flex mt-5 w-1/2 gap-x-5">
+                        <label class="font-bold text-lg" for="#">Save:</label>
+                        <input class="py-1 px-2 rounded-md w-1/2" type="text">
+                    </span>
+                    <span class="font-bold text-lg">%</span>
+                    <span class="flex">
+                        <button class="bg-blue-700 text-white px-3 py-1 5 mt-5 rounded-md font-bold text-lg">
+                            Save
+                        </button>
+                    </span>
+                </div>
+                <h3 class="text-2xl font-semibold text-center mt-5">Saving Amount: 2000 </h3>
+
+                <h3 class="text-2xl font-semibold text-center mt-5">Remaining Balance: 2500 </h3>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- 
         JS files is associated with html
      -->
-     <script src="js/utilities.js"></script>
-     <script src="js/expense.js"></script>
-     <script src="js/savings.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/expenses.js"></script>
+    <script src="js/savings.js"></script>
 </body>
 
 </html>
