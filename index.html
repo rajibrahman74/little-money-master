@@ -67,18 +67,18 @@
                 <div class="flex justify-between items-center mt-5">
                     <span class="flex mt-5 w-1/2 gap-x-5">
                         <label class="font-bold text-lg" for="#">Save:</label>
-                        <input class="py-1 px-2 rounded-md w-1/2" type="text">
+                        <input id="saving-field" class="py-1 px-2 rounded-md w-1/2" type="text">
                     </span>
                     <span class="font-bold text-lg text-center">%</span>
                     <span class="flex">
-                        <button class="bg-blue-700 text-white px-3 py-1 5 mt-5 rounded-md font-bold text-lg">
+                        <button id="save-btn" class="bg-blue-700 text-white px-3 py-1 5 mt-5 rounded-md font-bold text-lg">
                             Save
                         </button>
                     </span>
                 </div>
-                <h3 class="text-2xl font-semibold text-center mt-5">Saving Amount: 2000 </h3>
+                <h3 class="text-2xl font-semibold text-center mt-5">Saving Amount: <span id="total-savings">00</span></h3>
 
-                <h3 class="text-2xl font-semibold text-center mt-5">Remaining Balance: 2500 </h3>
+                <h3 class="text-2xl font-semibold text-center mt-5">Remaining Balance: <span id="remaining-balance">00</span> </h3>
             </div>
         </div>
     </section>
